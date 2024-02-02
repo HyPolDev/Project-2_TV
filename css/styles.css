@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 40em;
+    width: 70em;
+
+    background-color: gray;
+    border-radius: 2em;
+    border: 0.5em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    height: 25em;
+    width: 40em;
+
+    border-radius: 0.5em;
+
+}
+
+.basicScreen {
+    background-color: black;
+}
+
+#remote {
+    height: 25em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: khaki;
+    margin-left: 10em;
+}
+
+.button {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#volumeBar {
+    height: 1em;
+    background-color: white;
+    width: 1em;
+    min-width: 2em;
+    min-height: 2em;
+}
+
+.button:hover {
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.canal2 {
+    background-color: aqua;
+}
+
+.canal1 {
+    background-color: pink;
+}
+
+#power {
+    height: 2em;
+    width: 2em;
+    border: 1px solid black;
+    background-color: crimson;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteNoise {
+    background-image: url(../img/white_noise.png);
+}
