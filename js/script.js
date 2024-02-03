@@ -9,11 +9,10 @@ let power = document.getElementById("power")
 
 
 // set up volume bar ,
-let volumeBar = document.getElementById("volumeBar")
 let volumeLength
 
 
-console.log(volumeBar)
+
 
 let isOn = false
 
@@ -23,7 +22,7 @@ power.addEventListener("click", () => {
 
     if (isOn) {
         //volume lenght needs to be declared after the POWER button states its size
-        volumeBar.style.width = "2em"
+
         volumeLength = 0
         screen.classList.add("whiteNoise")
 
@@ -57,23 +56,22 @@ arrayButtons.map(
                     case "v":
                         console.log("volume Button has been pressed")
                         if (evento.target.id == "volUp" && volumeLength < 15) {
-                            console.log("esta dentro")
+
                             volumeLength += 1
                             console.log(volumeLength)
-                            volumeBar.style.width = `${volumeLength}em`;
 
+                            document.getElementById(`volDis${volumeLength}`)
+                                .style.backgroundImage = `url(../img/Display_Volume_on.png)`
 
-                            document.getElementById(`volDis${volumeLength}`).style.backgroundImage = `url(../img/Display_Volume_on.png)`
                         }
                         else if ((volumeLength > 0) && evento.target.id == "volDown") {
-                            document.getElementById(`volDis${volumeLength}`).style.backgroundImage = `url(../img/Display_Volume.png)`
+
+                            document.getElementById(`volDis${volumeLength}`)
+                                .style.backgroundImage = `url(../img/Display_Volume.png)`
+
                             volumeLength -= 1
-                            console.log(volumeLength)
-                            volumeBar.style.width = `${volumeLength}em`
                         }
                         break;
-
-
                 }
             }
         })
