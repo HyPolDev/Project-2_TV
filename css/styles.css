@@ -103,8 +103,6 @@ body {
     min-height: 2em;
 }
 
-
-
 .canal2 {
     background-color: aqua;
 }
@@ -129,6 +127,44 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 3;
+}
+
+#volUp {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: 163px;
+    left: 90px;
+    background-image: url(../img/Btn_Volume_Up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+}
+
+#volDown {
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: 163px;
+    left: 125px;
+    background-image: url(../img/Btn_Volume_Down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
 }
 
 .whiteNoise {
