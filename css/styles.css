@@ -164,8 +164,93 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 3;
-
 }
+
+#volDis1 {
+    top: 307px;
+    left: 92px;
+}
+
+#volDis2 {
+    top: 307px;
+    left: 115px;
+}
+
+#volDis3 {
+    top: 307px;
+    left: 138px;
+}
+
+#volDis4 {
+    top: 285px;
+    left: 92px;
+}
+
+#volDis5 {
+    top: 285px;
+    left: 115px;
+}
+
+#volDis6 {
+    top: 285px;
+    left: 138px;
+}
+
+#volDis7 {
+    top: 262px;
+    left: 92px;
+}
+
+#volDis8 {
+    top: 262px;
+    left: 115px;
+}
+
+#volDis9 {
+    top: 262px;
+    left: 138px;
+}
+
+#volDis10 {
+    top: 238px;
+    left: 92px;
+}
+
+#volDis11 {
+    top: 238px;
+    left: 115px;
+}
+
+#volDis12 {
+    top: 238px;
+    left: 138px;
+}
+
+#volDis13 {
+    top: 215px;
+    left: 92px;
+}
+
+#volDis14 {
+    top: 215px;
+    left: 115px;
+}
+
+#volDis15 {
+    top: 215px;
+    left: 138px;
+}
+
+.lightSmallOff {
+    background-image: url(../img/Display_Volume.png);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
 
 .whiteNoise {
     background-image: url(../img/white_noise.gif);

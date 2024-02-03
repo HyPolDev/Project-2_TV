@@ -24,7 +24,7 @@ power.addEventListener("click", () => {
     if (isOn) {
         //volume lenght needs to be declared after the POWER button states its size
         volumeBar.style.width = "2em"
-        volumeLength = 2
+        volumeLength = 0
         screen.classList.add("whiteNoise")
 
     }
@@ -56,13 +56,17 @@ arrayButtons.map(
 
                     case "v":
                         console.log("volume Button has been pressed")
-                        if (evento.target.id == "volUp") {
+                        if (evento.target.id == "volUp" && volumeLength < 15) {
                             console.log("esta dentro")
                             volumeLength += 1
                             console.log(volumeLength)
-                            volumeBar.style.width = `${volumeLength}em`
+                            volumeBar.style.width = `${volumeLength}em`;
+
+
+                            document.getElementById(`volDis${volumeLength}`).style.backgroundImage = `url(../img/Display_Volume_on.png)`
                         }
-                        else if ((volumeLength > 2) && evento.target.id == "volDown") {
+                        else if ((volumeLength > 0) && evento.target.id == "volDown") {
+                            document.getElementById(`volDis${volumeLength}`).style.backgroundImage = `url(../img/Display_Volume.png)`
                             volumeLength -= 1
                             console.log(volumeLength)
                             volumeBar.style.width = `${volumeLength}em`
