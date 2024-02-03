@@ -13,7 +13,6 @@ let volumeLength
 
 
 
-
 let isOn = false
 
 power.addEventListener("click", () => {
@@ -48,6 +47,7 @@ arrayButtons.map(
 
                     case "c":
                         console.log(evento.target.id, "has been clicked inside switch")
+
                         screen.classList.remove(screen.classList[screen.classList.length - 1])
                         screen.classList.add("canal" + evento.target.id.slice(-1))
 

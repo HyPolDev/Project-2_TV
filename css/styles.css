@@ -95,6 +95,45 @@ body {
     transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.channelButton {
+    background-image: url(../img/Btn_C_1.png);
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#c1,
+#c2 {
+    top: 426px;
+}
+
+#c3,
+#c4 {
+    top: 382px;
+}
+
+#c5,
+#c6 {
+    top: 339px;
+}
+
+#c1,
+#c3,
+#c5 {
+    left: 90px;
+}
+
+#c2,
+#c4,
+#c6 {
+    left: 125px;
+}
 
 
 .canal2 {
