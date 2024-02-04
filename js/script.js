@@ -3,6 +3,8 @@ const buttons = document.getElementsByClassName("button")
 
 let arrayButtons = Array.from(buttons)
 
+
+
 let screen = document.getElementById("screen")
 
 let power = document.getElementById("power")
@@ -28,6 +30,14 @@ power.addEventListener("click", () => {
     }
     else {
         screen.classList.remove(screen.classList[screen.classList.length - 1])
+
+        for (let i = volumeLength; i > 0; i--) {
+
+            document.getElementById(`volDis${i}`)
+                .style.backgroundImage = `url(../img/Display_Volume.png)`
+
+        }
+
     }
     console.log("Power", isOn ? "ON" : "OFF")
 
