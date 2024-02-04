@@ -4,22 +4,25 @@ const buttons = document.getElementsByClassName("button")
 let arrayButtons = Array.from(buttons)
 
 
-
 let screen = document.getElementById("screen")
 
 let power = document.getElementById("power")
 
+let screenFilter = document.getElementById("glassFilter")
 
 // set up volume bar ,
 let volumeLength
 
-
+let filterLength = 0
 
 let isOn = false
 
 power.addEventListener("click", () => {
 
     isOn = !isOn
+
+    screenFilter.classList.remove(screenFilter.classList[screenFilter.classList.length - 1])
+    screenFilter.classList.add(`glass-filter-0`)
 
     if (isOn) {
         //volume lenght needs to be declared after the POWER button states its size
@@ -43,7 +46,6 @@ power.addEventListener("click", () => {
 
 })
 
-console.log(volumeLength)
 
 arrayButtons.map(
     items => {
@@ -82,6 +84,35 @@ arrayButtons.map(
                             volumeLength -= 1
                         }
                         break;
+
+                    case "f":
+
+                        if (filterLength != evento.target.id.slice(-1)) {
+
+                            console.log("filter changed")
+                            filterLength = evento.target.id.slice(-1)
+
+                            screenFilter.classList.remove(screenFilter
+                                .classList[screenFilter.classList.length - 1])
+
+                            screenFilter.classList.add(`glass-filter-${filterLength}`)
+                        }
+
+                        else if (filterLength == evento.target.id.slice(-1)) {
+                            console.log("filter off")
+                            filterLength = 0
+                            screenFilter.classList.remove(screenFilter
+                                .classList[screenFilter.classList.length - 1])
+
+                            screenFilter.classList.add(`glass-filter-0`)
+
+                        }
+
+
+
+                        break;
+
+
                 }
             }
         })

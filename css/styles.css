@@ -46,16 +46,30 @@ body {
 
 }
 
-.glass-filter {
+#glassFilter {
     z-index: 1;
-    background-image: url(../img/Screen_glass.png);
     height: 275px;
     width: 343px;
     top: 185px;
     left: 190px;
     position: absolute;
     background-size: cover;
+}
 
+.glass-filter-0 {
+    background-image: url(../img/Screen_glass.png);
+}
+
+.glass-filter-1 {
+    background-image: url(../img/Screen_glass_red.png);
+}
+
+.glass-filter-2 {
+    background-image: url(../img/Screen_glass_green.png);
+}
+
+.glass-filter-3 {
+    background-image: url(../img/Screen_glass_blue.png);
 }
 
 .basicScreen {
@@ -299,8 +313,8 @@ body {
     border-radius: 0;
 }
 
-.filterButton:checked {
-    margin-top: 30px;
+.filter {
+    margin-top: 5px;
 }
 
 #f1,
