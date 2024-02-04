@@ -6,7 +6,7 @@ body {
 
     height: 100vh;
     width: 100vw;
-    background-color: aliceblue;
+    background-color: #e9ebd6;
 
     display: flex;
     justify-content: center;
@@ -19,9 +19,6 @@ body {
 #container {
     height: 100vh;
     width: 100vw;
-
-    background-color: #e9ebd6;
-
     display: flex;
     justify-content: left;
     align-items: center;
@@ -58,18 +55,22 @@ body {
 
 .glass-filter-0 {
     background-image: url(../img/Screen_glass.png);
+
 }
 
 .glass-filter-1 {
     background-image: url(../img/Screen_glass_red.png);
+
 }
 
 .glass-filter-2 {
     background-image: url(../img/Screen_glass_green.png);
+
 }
 
 .glass-filter-3 {
     background-image: url(../img/Screen_glass_blue.png);
+
 }
 
 .basicScreen {

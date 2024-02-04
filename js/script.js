@@ -67,6 +67,8 @@ arrayButtons.map(
 
                     case "v":
                         console.log("volume Button has been pressed")
+
+                        //for volume up
                         if (evento.target.id == "volUp" && volumeLength < 15) {
 
                             volumeLength += 1
@@ -76,6 +78,8 @@ arrayButtons.map(
                                 .style.backgroundImage = `url(../img/Display_Volume_on.png)`
 
                         }
+
+                        // for volume down 
                         else if ((volumeLength > 0) && evento.target.id == "volDown") {
 
                             document.getElementById(`volDis${volumeLength}`)
@@ -87,6 +91,7 @@ arrayButtons.map(
 
                     case "f":
 
+                        // if im not pressing the same button
                         if (filterLength != evento.target.id.slice(-1)) {
 
                             console.log("filter changed")
@@ -96,6 +101,13 @@ arrayButtons.map(
                                 .classList[screenFilter.classList.length - 1])
 
                             screenFilter.classList.add(`glass-filter-${filterLength}`)
+
+                            for (let i = 1; i < 4; i++) {
+                                document.getElementById(`f${i}`).style.marginTop = ""
+                            }
+
+                            document.getElementById(evento.target.id).style.marginTop = "2px"
+
                         }
 
                         else if (filterLength == evento.target.id.slice(-1)) {
@@ -106,9 +118,12 @@ arrayButtons.map(
 
                             screenFilter.classList.add(`glass-filter-0`)
 
+                            for (let i = 1; i < 4; i++) {
+                                document.getElementById(`f${i}`).style.marginTop = ""
+                            }
+
+
                         }
-
-
 
                         break;
 
