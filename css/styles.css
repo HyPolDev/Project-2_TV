@@ -288,3 +288,38 @@ body {
 .whiteNoise {
     background-image: url(../img/white_noise.gif);
 }
+
+.filterButton {
+    height: 16px;
+    width: 22px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    border-radius: 0;
+}
+
+.filterButton:checked {
+    margin-top: 30px;
+}
+
+#f1,
+#f2,
+#f3 {
+    top: 371px;
+}
+
+#f1 {
+    left: 575px;
+    background-image: url(../img/Btn_filter_red.png);
+}
+
+#f2 {
+    left: 615px;
+    background-image: url(../img/Btn_filter_green.png);
+}
+
+#f3 {
+    left: 657px;
+    background-image: url(../img/Btn_filter_blue.png);
+}
