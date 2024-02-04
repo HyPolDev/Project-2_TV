@@ -33,12 +33,16 @@ power.addEventListener("click", () => {
     }
     else {
         screen.classList.remove(screen.classList[screen.classList.length - 1])
-
+        //reset volume
         for (let i = volumeLength; i > 0; i--) {
 
             document.getElementById(`volDis${i}`)
                 .style.backgroundImage = ""
 
+        }
+        //reset filters
+        for (let i = 1; i < 4; i++) {
+            document.getElementById(`f${i}`).style.marginTop = ""
         }
 
     }
@@ -61,7 +65,7 @@ arrayButtons.map(
                         console.log(evento.target.id, "has been clicked inside switch")
 
                         screen.classList.remove(screen.classList[screen.classList.length - 1])
-                        screen.classList.add("canal" + evento.target.id.slice(-1))
+                        screen.classList.add("channel" + evento.target.id.slice(-1))
 
                         break;
 

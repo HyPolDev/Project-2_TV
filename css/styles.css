@@ -77,18 +77,6 @@ body {
     background-color: black;
 }
 
-#remote {
-    height: 25em;
-    width: 10em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 0.5em;
-    background-color: khaki;
-    margin-left: 60em;
-}
-
 .button {
     height: 2em;
     width: 2em;
@@ -151,13 +139,34 @@ body {
 }
 
 
-.canal2 {
-    background-color: aqua;
+.channel2 {
+    background-image: url(../img/channel_1.gif);
 }
 
-.canal1 {
-    background-color: pink;
+.channel1 {
+    background-image: url(../img/channel_2.gif);
 }
+
+.channel3 {
+    background-image: url(../img/channel_3.gif);
+}
+
+.channel4 {
+    background-image: url(../img/channel_4.gif);
+}
+
+.channel4 {
+    background-image: url(../img/channel_4.gif);
+}
+
+.channel5 {
+    background-image: url(../img/channel_5.gif);
+}
+
+.channel6 {
+    background-image: url(../img/channel_6.gif);
+}
+
 
 #power {
     position: absolute;
