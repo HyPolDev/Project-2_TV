@@ -34,7 +34,7 @@ power.addEventListener("click", () => {
         for (let i = volumeLength; i > 0; i--) {
 
             document.getElementById(`volDis${i}`)
-                .style.backgroundImage = `url(../img/Display_Volume.png)`
+                .style.backgroundImage = ""
 
         }
 
