@@ -39,6 +39,13 @@ power.addEventListener("click", () => {
         document.getElementById("snake").style.visibility = "hidden"
         document.getElementById("snake").style.zIndex = "0"
 
+
+        //this can be refactoriced on css
+        console.log(screen.classList)
+        if (screen.classList.length == 0) {
+            screen.classList.add("basicScreen")
+        }
+
         //reset volume
         for (let i = volumeLength; i > 0; i--) {
 
@@ -259,7 +266,7 @@ arrayButtons.map(
                             document.getElementById("snake").style.visibility = "hidden"
                             document.getElementById("snake").style.zIndex = "0"
 
-                            screen.classList.add("Whitenoise")
+                            screen.classList.add("whiteNoise")
 
                         }
                         break;
