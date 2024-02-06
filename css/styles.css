@@ -44,7 +44,7 @@ body {
 }
 
 #glassFilter {
-    z-index: 1;
+    z-index: 2;
     height: 275px;
     width: 343px;
     top: 185px;
@@ -346,4 +346,31 @@ body {
 #f3 {
     left: 657px;
     background-image: url(../img/Btn_filter_blue.png);
+}
+
+#snakeLever {
+    height: 27px;
+    width: 135px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    border-radius: 0;
+    background-image: url(../img/Btn_lever.png);
+    top: 560px;
+    left: 88px;
+}
+
+.snakeLeverOn {
+    margin-top: 10px;
+}
+
+#snake {
+    height: 245px;
+    width: 415px;
+    top: 200px;
+    left: 193px;
+    position: absolute;
+    z-index: 1;
+
 }
