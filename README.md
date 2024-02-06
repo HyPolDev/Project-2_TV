@@ -33,6 +33,7 @@ Both of them open to public use in the Terms and Conditions of its parent compan
 ## 🎓 Special Thanks
 
 - To **Geekshubs Academy** for the trust and encouragement to develop this first project (1/12 i suppose).
+- To **Spruce Gabriela** for the Snake code source that was adapted: [Repository](https://github.com/SpruceGabriela/snake-the-game)
 
 ## 📄 Add Ons - Bugs and Dreams
 

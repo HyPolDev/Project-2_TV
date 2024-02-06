@@ -57,7 +57,7 @@ power.addEventListener("click", () => {
 
 })
 
-/////////////////////////////////not entirely my///////////////////////////////////////////77
+/////////////////////////////////snake game adapted///////////////////////////////////////////77
 let gameLoopId;
 
 function init() {
@@ -92,7 +92,7 @@ function init() {
         context.fillRect(food.x, food.y, box, box);
     }
 
-    //quando um evento acontece, detecta e chama uma função
+    //updates on key change
     document.addEventListener('keydown', update);
 
     function update(event) {
@@ -129,7 +129,7 @@ function init() {
         if (direction == "down") snakeY += box;
 
         if (snakeX != food.x || snakeY != food.y) {
-            snake.pop(); //pop tira o último elemento da lista
+            snake.pop(); //pop last element of the list
         } else {
             food.x = Math.floor(Math.random() * 15 + 1) * box;
             food.y = Math.floor(Math.random() * 15 + 1) * box;
@@ -154,6 +154,8 @@ document.getElementById("snake").style.zIndex = "0"
 init()
 /////////////////////////////////////////////////////////////////////////////////////
 
+
+//action buttons
 arrayButtons.map(
     items => {
 
@@ -164,7 +166,8 @@ arrayButtons.map(
 
                 switch (evento.target.id.split("")[0]) {
 
-                    case "c":
+                    case "c": // c for channel
+
                         console.log(evento.target.id, "has been clicked inside switch")
 
                         screen.classList.remove(screen.classList[screen.classList.length - 1])
@@ -172,7 +175,7 @@ arrayButtons.map(
 
                         break;
 
-                    case "v":
+                    case "v": // v for volume
                         console.log("volume Button has been pressed")
 
                         //for volume up
@@ -196,7 +199,7 @@ arrayButtons.map(
                         }
                         break;
 
-                    case "f":
+                    case "f": // f for filter
 
                         // if im not pressing the same button
                         if (filterLength != evento.target.id.slice(-1)) {
@@ -209,6 +212,7 @@ arrayButtons.map(
 
                             screenFilter.classList.add(`glass-filter-${filterLength}`)
 
+                            //remove al filter styles
                             for (let i = 1; i < 4; i++) {
                                 document.getElementById(`f${i}`).style.marginTop = ""
                             }
@@ -216,7 +220,7 @@ arrayButtons.map(
                             document.getElementById(evento.target.id).style.marginTop = "2px"
 
                         }
-
+                        //if pressing the same button again
                         else if (filterLength == evento.target.id.slice(-1)) {
                             console.log("filter off")
                             filterLength = 0
@@ -234,18 +238,22 @@ arrayButtons.map(
 
                         break;
 
-                    case "s":
+                    case "s": // s for snake lever
                         snakeOn = !snakeOn
 
                         if (snakeOn) {
                             // remove whats on screen 
 
-                            document.getElementById("snakeLever").style.marginTop = "10px"
+                            document.getElementById("snakeLever").style.marginTop = "7px"
                             screen.classList.remove(screen.classList[screen.classList.length - 1])
+
+                            // show snake
                             document.getElementById("snake").style.visibility = "visible"
                             document.getElementById("snake").style.zIndex = "1"
 
                         }
+
+                        // hide snake if !snakeOn
                         else {
                             document.getElementById("snakeLever").style.marginTop = ""
                             document.getElementById("snake").style.visibility = "hidden"
