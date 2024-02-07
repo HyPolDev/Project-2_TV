@@ -2,15 +2,16 @@
 
 ¡Welcome all to Pixel Tv Project! This is the Week Two Project and second challenge at GeeksHubs Academy, consisting in a interactive tv with diferent channels, volume, and more.
 
-<img src="./img/gif_README.gif" alt="gif_page">
+
 
 ## 🚀 GitHub pages prevew
 
-You can get a prevew of the webside on the actions tab in GitHub or directly through this [link](https://hypoldev.github.io/Menu_Week-1-Project/).
+You can get a prevew of the webside on the actions tab in GitHub or directly through this [link](https://hypoldev.github.io/TV_Week-2-Project/).
 
 ## 🤖 How does it work? 
 
 Just click the start button and start enjoying. The snake game can played with the arrows.
+<img src="./img/screenSummary.png" alt="summary" style="height: 30em">
 
 ## 🛠️ Tech&Tolls used 
 
@@ -33,15 +34,16 @@ Both of them open to public use in the Terms and Conditions of its parent compan
 ## 🎓 Special Thanks
 
 - To **Geekshubs Academy** for the trust and encouragement to develop this first project (1/12 i suppose).
-- To **Spruce Gabriela** for the Snake code source that was adapted: [Repository](https://github.com/SpruceGabriela/snake-the-game)
+- To **Spruce Gabriela** for the Snake code source that was adapted for this project: [Repository](https://github.com/SpruceGabriela/snake-the-game)
 
 ## 📄 Add Ons - Bugs and Dreams
 
 Project finished on a polishing state, it is posible to find bugs, probably with the snake game:
-- JS needs to be refactorized, the design is fully functional but not optimized
-    - SnakeGame is always on and just z-indexed up or down
-    - Clear screan should have its own function
-- JS also may be splited in two different scripts
-- Pxs were used as size unit, due to my incompetence. Won't happen again
+- Major bug I havent been able to solve: Volume display lights only apear in local versions of the project, not in GitHub Pages. Till this date i havent figured out why.
+- JS needs to be refactorized, the design is fully functional but not optimized:
+    - SnakeGame is always on and just visibility changed.
+    - "Clear screan" should have its own function.
+- JS also may be splited in two different scripts.
+- Pxs were used as size unit, due to my incompetence. Won't happen again.
 <br>
 I'm no graphic designer to this date however I still belive the styling of this TV can be perfected with minimal changes, and I encourarge you to perform them.
