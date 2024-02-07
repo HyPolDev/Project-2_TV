@@ -32,6 +32,31 @@ body {
     top: 0px;
 }
 
+#dateTime {
+    top: 530px;
+    left: 581px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    z-index: 3;
+    border-radius: 0;
+    font-size: 32px;
+    color: rgb(0, 88, 0);
+    font-weight: bolder;
+}
+
+#dateTimeFilter {
+    z-index: 3;
+    height: 80px;
+    width: 100px;
+    top: 510px;
+    left: 577px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/Screen_glass.png);
+}
+
 #screen {
     height: 275px;
     width: 343px;
@@ -44,7 +69,6 @@ body {
 }
 
 #glassFilter {
-    z-index: 2;
     height: 275px;
     width: 343px;
     top: 185px;

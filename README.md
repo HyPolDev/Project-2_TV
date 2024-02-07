@@ -10,7 +10,7 @@ You can get a prevew of the webside on the actions tab in GitHub or directly thr
 
 ## 🤖 How does it work? 
 
-Just click the start button and start enjoying
+Just click the start button and start enjoying. The snake game can played with the arrows.
 
 ## 🛠️ Tech&Tolls used 
 

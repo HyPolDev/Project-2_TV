@@ -3,12 +3,23 @@ const buttons = document.getElementsByClassName("button")
 
 let arrayButtons = Array.from(buttons)
 
+let dt
+let DateTimeDiv = document.getElementById("dateTime")
 
 let screen = document.getElementById("screen")
 
 let power = document.getElementById("power")
 
 let screenFilter = document.getElementById("glassFilter")
+
+
+setInterval(Time, 1000)
+function Time() {
+    dt = new Date()
+    DateTimeDiv.innerHTML = dt.toLocaleTimeString();
+    console.log(dt.toLocaleTimeString())
+}
+
 
 // set up volume bar ,
 let volumeLength
@@ -31,6 +42,8 @@ power.addEventListener("click", () => {
 
         volumeLength = 0
         screen.classList.add("whiteNoise")
+        DateTimeDiv.style.zIndex = "3"
+
 
     }
     else {
@@ -39,6 +52,7 @@ power.addEventListener("click", () => {
         document.getElementById("snake").style.visibility = "hidden"
         document.getElementById("snake").style.zIndex = "0"
 
+        DateTimeDiv.style.zIndex = "1"
 
         //this can be refactoriced on css
         console.log(screen.classList)
@@ -177,9 +191,10 @@ arrayButtons.map(
 
                         console.log(evento.target.id, "has been clicked inside switch")
 
-                        screen.classList.remove(screen.classList[screen.classList.length - 1])
-                        screen.classList.add("channel" + evento.target.id.slice(-1))
-
+                        if (!snakeOn) {
+                            screen.classList.remove(screen.classList[screen.classList.length - 1])
+                            screen.classList.add("channel" + evento.target.id.slice(-1))
+                        }
                         break;
 
                     case "v": // v for volume
