@@ -19,7 +19,7 @@ function Time() {
     DateTimeDiv.innerHTML = dt.toLocaleTimeString();
     console.log(dt.toLocaleTimeString())
 }
-
+DateTimeDiv.style.visibility = "Hidden"
 
 // set up volume bar ,
 let volumeLength
@@ -42,7 +42,7 @@ power.addEventListener("click", () => {
 
         volumeLength = 0
         screen.classList.add("whiteNoise")
-        DateTimeDiv.style.zIndex = "3"
+        DateTimeDiv.style.visibility = "visible"
 
 
     }
@@ -52,7 +52,7 @@ power.addEventListener("click", () => {
         document.getElementById("snake").style.visibility = "hidden"
         document.getElementById("snake").style.zIndex = "0"
 
-        DateTimeDiv.style.zIndex = "1"
+        DateTimeDiv.style.visibility = "Hidden"
 
         //this can be refactoriced on css
         console.log(screen.classList)
@@ -271,7 +271,7 @@ arrayButtons.map(
 
                             // show snake
                             document.getElementById("snake").style.visibility = "visible"
-                            document.getElementById("snake").style.zIndex = "1"
+
 
                         }
 
@@ -279,7 +279,7 @@ arrayButtons.map(
                         else {
                             document.getElementById("snakeLever").style.marginTop = ""
                             document.getElementById("snake").style.visibility = "hidden"
-                            document.getElementById("snake").style.zIndex = "0"
+
 
                             screen.classList.add("whiteNoise")
 

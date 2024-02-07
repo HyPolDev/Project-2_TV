@@ -33,23 +33,32 @@ body {
 }
 
 #dateTime {
-    top: 530px;
-    left: 581px;
+    top: 186px;
+    left: 590px;
     height: 50px;
     width: 80px;
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     border-radius: 0;
-    font-size: 32px;
-    color: rgb(0, 88, 0);
+    font-size: 26px;
+    color: rgb(0, 70, 0);
     font-weight: bolder;
 }
 
-#dateTimeFilter {
-    z-index: 3;
+#screenTime {
+    z-index: -1;
     height: 80px;
     width: 100px;
-    top: 510px;
+    top: 160px;
+    left: 577px;
+    position: absolute;
+}
+
+#dateTimeFilter {
+    z-index: 1;
+    height: 80px;
+    width: 100px;
+    top: 160px;
     left: 577px;
     position: absolute;
     background-size: cover;
@@ -69,6 +78,7 @@ body {
 }
 
 #glassFilter {
+    z-index: 1;
     height: 275px;
     width: 343px;
     top: 185px;
@@ -98,7 +108,7 @@ body {
 }
 
 .basicScreen {
-    background-color: black;
+    background-color: rgb(135, 135, 135);
 }
 
 .button {
@@ -395,6 +405,6 @@ body {
     top: 200px;
     left: 193px;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 
 }
