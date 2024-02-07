@@ -39,7 +39,7 @@ Both of them open to public use in the Terms and Conditions of its parent compan
 ## 📄 Add Ons - Bugs and Dreams
 
 Project finished on a polishing state, it is posible to find bugs, probably with the snake game:
-- Major bug I havent been able to solve: Volume display lights only apear in local versions of the project, not in GitHub Pages. Till this date i havent figured out why.
+-  ***Major bug I havent been able to solve: Volume display lights apear and work fine only in local versions of the project***, not in GitHub Pages. Till this date i havent figured out why: routes are fine and f12(inspect element) shows no sign of anithing being broken : images are where they shoud... Is it maybe something to do with GitHub? I have no idea.
 - JS needs to be refactorized, the design is fully functional but not optimized:
     - SnakeGame is always on and just visibility changed.
     - "Clear screan" should have its own function.
